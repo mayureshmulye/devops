@@ -1,10 +1,20 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
+  creationTimestamp: null
   labels:
-    run: nginx
-  name: nginx
+    app: app
+  name: app
 spec:
-  containers:
-  - image: docker pull mayureshmulye/devops:latest
-    name: nginx
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - image: mayureshmulye/devops:latest
+        name: devops
