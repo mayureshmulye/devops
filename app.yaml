@@ -6,5 +6,5 @@ metadata:
   name: nginx
 spec:
   containers:
-  - image: $(Build.Repository.Name):$(Build.BuildId)
+  - image: docker pull mayureshmulye/devops:latest
     name: nginx
