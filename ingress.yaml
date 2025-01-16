@@ -4,7 +4,7 @@ metadata:
   name: nginx2
   namespace: default
 spec:
-  ingressClassName: nginx2
+  ingressClassName: nginx
   rules:
   - host: nginx2.mayureshmulye.publicvm.com
     http:
