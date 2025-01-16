@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: app.mayureshmulye.publicvm.com
+  - host: mayureshmulye.publicvm.com
     http:
       paths:
       - backend:
