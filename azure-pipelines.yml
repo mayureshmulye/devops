@@ -16,6 +16,6 @@ steps:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: 'latest'
-- task: CmdLine@2
-  inputs:
-    script: 'docker rm -vf $(docker ps -aq);docker rmi -f $(docker images -aq)'
+#- task: CmdLine@2
+#  inputs:
+#    script: 'docker rm -vf $(docker ps -aq);docker rmi -f $(docker images -aq)'
