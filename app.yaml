@@ -6,7 +6,7 @@ metadata:
     app: app
   name: app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: app
@@ -16,5 +16,5 @@ spec:
         app: app
     spec:
       containers:
-      - image: mayureshmulye/devops:latest
+      - image: nginx
         name: devops
